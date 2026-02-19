@@ -1,0 +1,33 @@
+
+
+div{
+    border: 1px #555 dashed;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+}
+.dashboard{
+    grid-row: span 2;
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+}
+.main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap:10px
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:10px
+}
+
+.side{
+    display: grid;
+}
+.header{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
