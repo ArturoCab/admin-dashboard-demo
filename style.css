@@ -1,27 +1,38 @@
+:root{
+    --primary-color:#e0e046;
+    --secondary-color:#93e046;
+    --tertiary-color:#e09343;
+    --background-color:#dadaf8;
+}
 
-
-div{
-    border: 1px #555 dashed;
+body{
+    margin: 0em;
 }
 
 .container{
     display:grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: 150px;
 }
 .dashboard{
     grid-row: span 2;
     display: grid;
     grid-template-rows: 50px 1fr 1fr;
+    background-color: var(--primary-color,yellow);
+    height: calc(100vh - 5px);
+    padding: 15px;
 }
 .main{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap:10px
+    gap:10px;
+    background-color: var(--background-color,gray);
+    padding:20px;
 }
 .projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap:10px
+    gap:15px;
 }
 
 .side{
@@ -30,4 +41,16 @@ div{
 .header{
     display: grid;
     grid-template-columns: 3fr 2fr;
+}
+
+.card{
+    background-color: white;
+    padding: 20px 10px;
+}
+
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
