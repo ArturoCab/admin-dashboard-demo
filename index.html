@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/684ca8f118.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    <style>
+        .sharingan{
+            stroke:red;
+            stroke-width: 4px;
+            stroke-dasharray: 70, 25;
+            stroke-linecap: butt;
+        }
+        circle{
+            visibility: collapse;
+        }
+        svg{
+            visibility: collapse;
+        }
+    </style>
+    <!--svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" hidden>
+        <circle cx="50" cy="50" r="48" fill="black" />
+        <circle class="sharingan" cx="50" cy="50" r="48" fill="none"/>
+        <circle class="sharingan" cx="50" cy="50" r="4" fill="none"/>
+        <!-- <path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/> -->
+    <!--/svg-->
     <div class="container">
         <div class="dashboard">
             <div class="title">Dashboard</div>
@@ -30,9 +52,29 @@
 
         </div>
         <div class="header">
-            <div class="header-search">Search</div>
-            <div class="header-info">Notify miniature Name</div>
-            <div class="header-greetings">pic Hi there, name</div>
+            <div class="header-search">
+                
+                <div class="search-bar">
+                    <!--<i class="fa-solid fa-magnifying-glass"></i>-->
+                    <input>
+                </div>
+            </div>
+            <div class="header-info">
+                <i class="fa-regular fa-bell"></i>
+                <img src="avatar.png" alt="">
+                <p>Morgan Oakley</p>
+            </div>
+            <div class="header-greetings">
+                <div class="greetings-pic">
+                    <img src="avatar.png" class="greetings-pic-pic">
+                </div>
+                <div class="greetings-name">
+                    <p>
+                        <span class="small">Hi there,</span><br>
+                        MorganOakley (@morgan)
+                    </p>
+                </div>
+            </div>
             <div class="header-buttons">
                 <button>
                     New
@@ -96,125 +138,37 @@
                         <div class="card-nav-buttons"></div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-content">project<br>project description</div>
-                    <div class="card-nav">
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                        <div class="card-nav-buttons"></div>
-                    </div>
-                </div>
             </div>
             <div class="side">
-                <div class="announce">Announcements</div>
+                <div class="announce">
+                    <div class="announce-card">
+                        <div class="announce-item">
+                            <h5>Site Maintenance</h5>
+                            <p>
+                                Phasellus suscipit ex nibh, eget aliquet est condimentum sed. Donec vestibulum nulla vitae dolor dignissim, in viverra arcu mollis. Proin consectetur tristique nibh, quis laoreet turpis faucibus in. Vivamus laoreet venenatis lectus et lobortis. Proin gravida fermentum ipsum. Sed vulputate ante quis magna mattis, rhoncus lacinia ipsum dignissim. Duis in augue tristique, molestie nulla vel, varius eros. Phasellus sed magna sem. Etiam pretium cursus sollicitudin. Suspendisse id purus vel dui dapibus malesuada at lacinia enim. Mauris porta venenatis metus, ultrices pellentesque dolor. Donec sed venenatis justo. Nam quis tortor malesuada, porta sem sed, egestas tortor. Ut imperdiet nulla suscipit dolor elementum elementum. Duis cursus imperdiet nulla id ultrices.
+                            </p>
+                        </div>
+                        <div class="announce-item">
+                            <h5>Community Share Day</h5>
+                            <p>
+                                In aliquam imperdiet feugiat. Aliquam nulla dolor, luctus blandit suscipit sit amet, convallis eget massa. Curabitur fermentum aliquet felis sed elementum. Pellentesque eleifend ligula et ipsum accumsan rhoncus. Maecenas a ligula at enim blandit tempor in ut augue. Cras vitae efficitur lacus, at pharetra velit. Fusce in enim et metus tincidunt tincidunt. Integer eleifend ex nisi, eu facilisis mauris lobortis et. Ut nec ante sed ante euismod tempor. Pellentesque fermentum, dolor eget aliquet rhoncus, lacus lacus dignissim mauris, non pellentesque ligula mi eu quam.                                
+                            </p>
+                        </div>
+                        <div class="announce-item">
+                            <h5>Community Share Day</h5>
+                            <p>
+                                Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eget cursus mauris. Aenean dignissim, mauris quis sollicitudin lacinia, nunc metus fringilla magna, a molestie nisl tellus non nunc. Nam porta risus quis accumsan viverra. Aenean sagittis blandit dolor, at porttitor augue consequat ac. Nulla facilisis at mi eu porttitor. Nullam varius et leo eu cursus. Aliquam non quam mattis risus tristique auctor. Phasellus blandit bibendum bibendum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="trending">Trending</div>
             </div>
         </div>
     </div>
+    
+    
+
     
 </body>
 </html>
