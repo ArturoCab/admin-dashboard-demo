@@ -45,7 +45,7 @@ body{
 .container{
     display:grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 150px;
+    grid-template-rows: 150px 1fr;
 }
 .dashboard{
     grid-row: span 2;
@@ -78,6 +78,7 @@ body{
 }
 .side{
     display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .announce-item{
@@ -140,16 +141,14 @@ body{
 
 .announce-card{
     background-color: white;
-    padding: 1rem;
-    border-radius: 15px;
-    box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.4);
+    
 }
 
 .card{
     background-color: var(--card-bg,white);
     padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,.8);
-    border-radius: 8px;
+    border-radius: 15px;
+    box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.4);
 }
 
 .header-buttons{
